@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seçiciler(Selectors)</title>
+
+    <style>
+        /* * {
+            color: red; /*Bütün elementlere etki etmek için * kullanabiliriz*
+        } */
+
+        /* h1{
+            color: blue; /*Bütün h1 etiketlerine etki eder*
+        } */
+
+        /* h1,p{
+            color: black; /*Bütün h1 ve p etiketlerine etki eder*
+        } */
+
+        /* div h3{
+            color: pink; /*Div etiketleri içerisindeki h3 etiketlerine etki eder yani element içerisinde element seçmek için kullanabiliriz*
+        } */
+
+        /* div>p{
+            color: green; /* Parent'i div olan bütün p elementlerini seçmek için kullanabiliriz*
+        } */
+
+        /* div+p{
+            color: yellow; /* Div elementinden sonraki (div elementleri içerisinde bulunmayan) ilk p elementini seçer. Sonraki p elementleri etkilenmez* 
+        } */
+
+        /* div~p{
+            color: lightblue; /* Div elementinden sonraki bütün p elementlerini seçer*
+        } */
+
+        /* div>p:first-child{
+            color: red; /* Element içerisindeki ilk elementi seçmek için kullanılır. Eğer element belirtilen element yani buradaki
+            gibi (p) elementi değilse seçim yapılmaz*
+        } */
+
+        /* div>p:last-child{
+            color: red; /* Element içerisindeki son elementi seçmek için kullanılır. Eğer element belirtilen element yani buradaki
+            gibi (p) elementi değilse seçim yapılmaz*
+        } */
+
+        /* div>p:nth-child(4){
+            color: blue; /* Element içerisindeki seçmek istediğimiz child'ı sıra numarası ile seçebiliyoruz. Örneğin bu satırda
+            div etiketleri içerisindeki p etiketlerinden 4. child'ı seç demiş oluyoruz.*
+        } */
+
+        /* .div2>ul li:last-child{
+            color: lightgreen; /* Bu şekilde ise class verilmiş elementlerin içinde seçim yapabiliyor ve o elementlerin içerisinde de
+            elementleri ve onların child'larını seçebiliyoruz
+        } */
+    </style>
+
+
+</head>
+
+<body>
+
+    <div>
+        <h1>Paragraf-1</h1>
+        <h1>Paragraf-2</h1>
+        <h1>Paragraf-3</h1>
+        <p>Paragraf-4</p>
+
+        <nav>
+            <h1>Paragraf-5</h1>
+            <a href="#">Link-1</a>
+            <a href="#">Link-2</a>
+            <a href="#">Link-3</a>
+        </nav>
+    </div>
+
+    <div>
+        <h3>Paragraf-6</h3>
+        <h3>Paragraf-7</h3>
+        <h3>Paragraf-8</h3>
+        <p>Paragraf-9</p>
+        <p>Paragraf-10</p>
+    </div>
+
+    <p>Paragraf-11</p>
+    <p>Paragraf-12</p>
+
+    <div class="div2">
+        <p>Paragraf-13</p>
+        <p>Paragraf-14</p>
+        <p>Paragraf-15</p>
+        <p>Paragraf-16</p>
+        <p>Paragraf-17</p>
+        <ul>
+        <li>Paragraf-18</li>
+        <li>Paragraf-19</li>
+        <li>Paragraf-20</li>    
+        </ul>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
