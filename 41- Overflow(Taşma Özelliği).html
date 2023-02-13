@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow(Taşma Özelliği)</title>
+
+    <style>
+        .div1{
+            background-color: lightblue;
+            width: 100%;
+            height: 200px;
+            overflow: visible; /*Default olarak seçilen seçenektir. Yazılar div'den taşarsa taşan kısımlarda div'den bağımsız olarak görünmeye
+            devam edecektir*/
+            overflow: hidden; /*Yazılar div'den taşmışsa taşan kısımları gizler ve sadece div'in alanı kadar yazı görünür*/
+            overflow: scroll; /*Yazılar div'den taşsa da taşmasa da div alanına bir scroll bar ekler ve scroll bar sürekli görünür*/
+            overflow: auto; /*Yazılar div alanından taştığı anda bir scroll bar ekler eğer yazılar div alanından taşmıyorsa scroll
+            bar görünmez*/
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi itaque deleniti harum temporibus culpa laudantium magnam amet alias, voluptas eius consectetur esse excepturi incidunt beatae provident. Quasi, odio porro dolor cumque nemo expedita officiis nulla explicabo voluptatum perspiciatis provident repudiandae natus! Quos, nesciunt aspernatur. Tempore doloremque dicta quos? Unde consectetur impedit mollitia minima repellendus dignissimos quae at ab nam. Sint iusto nam officia ipsum velit. Asperiores a officia expedita perspiciatis ratione sapiente consequuntur sequi quia, laboriosam debitis tenetur neque eveniet error repellat aliquid soluta illum iusto omnis modi repellendus magni commodi rerum? Exercitationem explicabo minus voluptas suscipit id corporis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum, ut eveniet laudantium facere labore ratione itaque officiis modi porro. Ad ullam sapiente obcaecati placeat similique earum magnam cumque enim modi. Eaque laudantium, vel veritatis accusamus laborum enim eius! Et quaerat soluta sapiente aliquid praesentium ducimus deleniti amet, molestiae repudiandae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur molestias quod vitae ut asperiores laudantium quae dignissimos! Vitae, eaque tempora optio iusto, non temporibus odit inventore repudiandae eveniet, nemo ut voluptatem error. Ipsam vero illum perspiciatis nulla porro iusto eum fugit tempora asperiores, impedit qui aut consequuntur quo, error quis aspernatur labore accusamus dolorem praesentium eos voluptatum. Possimus recusandae ut omnis quod quia dolores consequuntur, eligendi vel laborum asperiores provident?</p>
+    </div>
+</body>
+</html>
