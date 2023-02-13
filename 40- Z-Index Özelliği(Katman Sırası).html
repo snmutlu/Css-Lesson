@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40- Z-Index Özelliği</title>
+    <style>
+        .a1{
+            margin: 0;
+            padding: 0;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+           
+            
+            
+        }
+        img{
+            position:absolute; /*Bu satırla projemizdeki resmin mutlak olarak aynı yerde bulunmasını sağlıyoruz*/
+            z-index: -1; /*Bu satırda verdiğimiz değer elementin katman sırası önceliğini temsil ediyor*/
+        
+        }
+        h1{
+            text-align: center;
+            padding-top: 30px;
+        }
+        h2{
+        text-align: center;
+        vertical-align: text-bottom;
+        margin-top: 180px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="a1">
+        <img src="/resimler/image1.jpg" alt="" width="300" height="300">
+        <h1>Mutlu SENEM</h1>
+        <h2>Created by</h2>
+    </div>
+</body>
+
+</html>
