@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .hrztbar{
+            width: 80%;
+            height: auto;
+            background-color: aquamarine;
+        }
+        ul{
+            list-style-type: none;
+            background-color: #333;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            display:inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: larger;
+            padding: 14px 16px;
+        }
+        .active{
+            background-color: #04AA6D;
+        }
+        .about{
+            float: right;
+        }
+        li a:hover:not(.active){
+            background-color: black;
+            transition: 0.8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hrztbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="about"><a href="https://www.facebook.com/helvaciyakubefendisamandira/" class="active" target="_blank">About</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
