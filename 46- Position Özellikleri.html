@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>46-Position Özellikleri</title>
+    <style>
+        /*1*/
+        .fixed-topbar {
+            width: 50%;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: fixed; /*Bu seçenek sayesinde div'imiz her zaman seçtiğimiz yerde kalacak*/
+            bottom: 20px;
+        }
+
+        /*2*/
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            top: 40px;
+            left: 410px;
+            z-index: 1;
+        }
+
+        .blue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            left: 420px;
+            top: 20px;
+        }
+
+        /*3*/
+        .outer-box {
+            width: 200px;
+            height: 200px;
+            background-color: #a7a7a7;
+            position: relative;
+            left: 100px;
+        }
+
+        .inner-box {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;/*Bu sayede inner box div'imizi outer box div'imizin konumuna göre
+            konumlandırmış oluyoruz*/
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--1)Position Fixed: Sayfada bir navigation barı veya bir headeri
+    sayfanın herhangi bir yerine sabitlemek istersek bu seçeneği kullanabiliriz.-->
+    <div class="fixed-topbar">Udemy</div>
+    <!--2)Position Relative: Sayfadaki div'imiz veya nesnemiz veya herhangi bir elementimizin
+    bulunduğu yerden position vermemizi sağlıyor-->
+    <div class="red"></div>
+    <div class="blue"></div>
+    <!--3)Position Absolute: Biz elementimizi kapsayıcımıza göre konumlandırmak
+    istiyorsak absolute özelliğimizi kullanabiliriz. Ancak kapsayıcımızın position
+seçeneğinin de relative veya fixed olması gerekli-->
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+    <!--Not:Position özelliği normalde elementlerde standart olarak static seçili haldedir-->
+
+</body>
+
+</html>
